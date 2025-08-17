@@ -1,5 +1,5 @@
 import moluxCurve from "../assets/products/MoluxCurve.png";
-import moxar_box from "../assets/products/Moxar-box.png";
+import moxar_box from "../assets/products/Moxar-Box.png";
 import moxar_container from "../assets/products/Moxar-Container.png";
 import moxar from "../assets/products/moxar.png";
 import polux_cubebin_compact from "../assets/products/Polux-Cubebin-compact.png";
