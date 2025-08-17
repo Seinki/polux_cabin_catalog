@@ -15,9 +15,9 @@ const Home = () => {
   const features = [
     {
       icon: Wrench,
-      title: "Fully Customizable",
+      title: "CUSTOMABLE",
       description:
-        "Design your perfect cabin with our advanced configuration tools",
+        "Size, design, colour, specification, modular partition, and many more as customers need with various function Easy to Movable to changing place and any land contour, to minimalized cut and field budget for land civil works",
     },
     {
       icon: HomeIcon,
