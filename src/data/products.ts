@@ -42,7 +42,7 @@ export const products: Product[] = [
     price: 655000000,
     image: polux2,
     category: "premium",
-    dimensions: "3.7 x 10 meters",
+    dimensions: "4 x 10 meters",
     features: [
       "2 Bedrooms",
       "Bed 160x200cm",

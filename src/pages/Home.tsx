@@ -14,16 +14,16 @@ import polux1 from "../assets/products/polux1.png";
 const Home = () => {
   const features = [
     {
-      icon: HomeIcon,
-      title: "Premium Quality",
-      description:
-        "Built with the finest materials and craftsmanship for lasting durability",
-    },
-    {
       icon: Wrench,
       title: "Fully Customizable",
       description:
         "Design your perfect cabin with our advanced configuration tools",
+    },
+    {
+      icon: HomeIcon,
+      title: "Premium Quality",
+      description:
+        "Built with the finest material, Aluminium Composite Panel body cover, Galvanized Steel frame structure, and customable interior material",
     },
     {
       icon: Package,
