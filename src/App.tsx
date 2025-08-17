@@ -62,7 +62,7 @@ function App() {
                   </li>
                   <li>
                     <Link
-                      to="https://wa.me/6281234567890?text=Hello%20Polux%20Cabin%2C%20I%20would%20like%20to%20order%20a%20cabin"
+                      to="https://wa.me/6285250000690?text=Hello%20Polux%20Cabin%2C%20I%20would%20like%20to%20order%20a%20cabin"
                       className="hover:text-white"
                     >
                       Contact
@@ -75,7 +75,7 @@ function App() {
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <p className="text-white text-sm">📍 Bandung, Indonesia</p>
-                <p className="text-white text-sm">📧 info@poluxcabin.com</p>
+                <p className="text-white text-sm">📧 poluxcabin@gmail.com</p>
                 <p className="text-white text-sm">
                   📱 WhatsApp:
                   <a
@@ -93,7 +93,7 @@ function App() {
               <div className="flex flex-col items-start">
                 <h4 className="font-semibold mb-4">Get a Quote</h4>
                 <a
-                  href="https://wa.me/6281234567890?text=Hello%20Polux%20Cabin%2C%20I%20would%20like%20to%20order%20a%20cabin"
+                  href="https://wa.me/6285250000690?text=Hello%20Polux%20Cabin%2C%20I%20would%20like%20to%20order%20a%20cabin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition-all"
