@@ -61,7 +61,7 @@ const Header = () => {
             >
               <ShoppingCart size={30} />
               {totalItems > 0 && (
-                <span className="absolute -top-1 -right-1 bg-polux-yellow text-white text-xs rounded-full h-6 w-6 flex items-center justify-center font-bold">
+                <span className="absolute -top-1 -right-1 bg-polux-yellow text-gray-900 text-xs rounded-full h-6 w-6 flex items-center justify-center font-bold">
                   {totalItems}
                 </span>
               )}
