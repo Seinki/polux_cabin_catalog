@@ -61,7 +61,10 @@ function App() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/contact" className="hover:text-white">
+                    <Link
+                      to="https://wa.me/6281234567890?text=Hello%20Polux%20Cabin%2C%20I%20would%20like%20to%20order%20a%20cabin"
+                      className="hover:text-white"
+                    >
                       Contact
                     </Link>
                   </li>
@@ -101,13 +104,16 @@ function App() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="mt-10 border-t border-gray-500 pt-6 text-center text-blue-300 text-sm">
+            <div className="mt-10 border-t border-gray-500 pt-6 text-center text-white text-sm">
               © {new Date().getFullYear()} Polux Cabin. All Rights Reserved. |
-              <Link to="/terms" className="hover:text-white ml-1">
+              <Link to="/terms" className="text-blue-200 hover:text-white ml-1">
                 Terms
               </Link>{" "}
               |
-              <Link to="/privacy" className="hover:text-white ml-1">
+              <Link
+                to="/privacy"
+                className="text-blue-200 hover:text-white ml-1"
+              >
                 Privacy
               </Link>
             </div>
