@@ -320,7 +320,7 @@ const CustomCabin = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Preview</h3>
               <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-100 rounded-lg flex items-center justify-center relative overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=500"
+                  src={polux_custom}
                   alt="Custom Cabin Preview"
                   className="w-full h-full object-cover rounded-lg"
                 />
