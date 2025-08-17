@@ -7,6 +7,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import jumboTron from "../assets/polux-industries.jpg";
+import polux_cubebin_compact from "../assets/products/Polux-Cubebin-compact.png";
+import polux_custom from "../assets/products/POLUX-Custom.png";
+import polux1 from "../assets/products/polux1.png";
 
 const Home = () => {
   const features = [
@@ -33,22 +36,19 @@ const Home = () => {
     {
       name: "Premium Series",
       description: "Our flagship collection of luxury portable cabins",
-      image:
-        "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: polux1,
       link: "/catalog?category=premium",
     },
     {
       name: "Cube Collection",
       description: "Modern cubic designs with efficient space utilization",
-      image:
-        "https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: polux_cubebin_compact,
       link: "/catalog?category=cube",
     },
     {
       name: "Custom Cabins",
       description: "Design your own cabin with unlimited possibilities",
-      image:
-        "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=500",
+      image: polux_custom,
       link: "/custom",
     },
   ];
