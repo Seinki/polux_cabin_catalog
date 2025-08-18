@@ -62,23 +62,23 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 ">
+              <h1 className="text-3xl lg:text-4xl font-bold mb-6 ">
                 <span className="">
                   Indonesia’s First
                   <br />
                 </span>
-                <span className="text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
+                <span className="text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-white to-blue-500">
                   Futuristic{" "}
                 </span>
-                <span className="text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-polux-green to-polux-white">
+                <span className="text-2xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-polux-green to-polux-white">
                   ECO-Friendly
                   <br />
                 </span>
-                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
+                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-white via-polux-yellow to-polux-white">
                   Portable Cabins
                 </span>
               </h1>
-              <p className="text-lg lg:text-2xl mb-8 text-polux-white leading-relaxed">
+              <p className="text-base lg:text-1xl mb-8 text-polux-white leading-relaxed">
                 Make your life more flexible and comfortable with our premium
                 portable cabins.
               </p>
