@@ -92,14 +92,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <div className="flex space-x-3">
               <Link
                 to={`/product/${product.id}`}
-                className="flex-1 bg-gray-100 text-sm lg:text-base text-center text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-200 flex items-center justify-center space-x-2"
+                className="flex-1 inline-flex items-center justify-center space-x-2 bg-gray-100 text-gray-700 text-sm lg:text-base px-4 py-5 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-200"
               >
-                <Eye size={20} />
+                <Eye size={18} />
                 <span>View Details</span>
               </Link>
               <button
                 onClick={handleAddToCart}
-                className="flex-1 bg-gray-600 text-white text-sm lg:text-base text-center px-4 py-2 rounded-lg font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+                className="flex-1 bg-gray-600 text-white text-sm lg:text-base px-4 py-2 rounded-lg font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <ShoppingCart size={18} />
                 <span>Add to Cart</span>
