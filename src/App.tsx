@@ -25,14 +25,23 @@ function App() {
           </Routes>
 
           {/* Footer Section */}
-          <footer className="bg-blue-900 text-white py-12 bg-gradient-to-r from-gray-500 to-slate-800 text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+          <footer className="bg-blue-900 text-white py-6 bg-gradient-to-r from-gray-500 to-slate-800">
+            <div className="max-w-6xl mx-auto px-4 py-5 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
               {/* Brand */}
               <div>
                 <img src={logo} alt="Polux Cabin Logo" className="w-32" />
                 {/* <h3 className="text-1xl font-bold mb-4">Polux Cabin</h3> */}
+                <p className="text-white text-sm mb-2 mt-2">
+                  Indonesia’s First Portable Cabin Revolution.
+                </p>
                 <p className="text-white text-sm">
-                  Indonesia’s First Portable Cabin Revolution
+                  Architect Designed by:{" "}
+                  <span className="font-semibold">KONARS DESIGN</span>
+                  <br />
+                  Produced by:{" "}
+                  <span className="font-semibold">
+                    PT. Moxar Orion Construction
+                  </span>
                 </p>
               </div>
 
@@ -72,7 +81,7 @@ function App() {
               </div>
 
               {/* Contact Info */}
-              <div>
+              <div className="space-y-0 lg:space-y-2">
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <p className="text-white text-sm">📍 Bandung, Indonesia</p>
                 <p className="text-white text-sm">📧 poluxcabin@gmail.com</p>

@@ -61,13 +61,19 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                <span className="">Indonesia’s First</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
+              <h1 className="text-2xl lg:text-6xl font-bold mb-6 ">
+                <span className="">Indonesia’s First </span>
+                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
+                  Futuristic{" "}
+                </span>
+                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-green to-polux-white">
+                  ECO-Friendly{" "}
+                </span>
+                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
                   Portable Cabins
                 </span>
               </h1>
-              <p className="text-xl lg:text-2xl mb-8 text-polux-white leading-relaxed">
+              <p className="text-lg lg:text-2xl mb-8 text-polux-white leading-relaxed">
                 Make your life more flexible and comfortable with our premium
                 portable cabins.
               </p>
@@ -76,7 +82,7 @@ const Home = () => {
                   to="/catalog"
                   className="border-2 border-polux-gold bg-polux-yellow text-polux-grayDark px-8 py-4 rounded-lg font-semibold hover:bg-transparent hover:border-2 border-polux-white hover:text-polux-white transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
                 >
-                  <span>Explore Cabins</span>
+                  <span className="text-base">Explore Cabins</span>
                   <ArrowRight size={20} />
                 </Link>
                 <Link
