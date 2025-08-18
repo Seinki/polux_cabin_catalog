@@ -1,3 +1,7 @@
+import glasswood_cabin_2_lantai_wall_panel from "../assets/products-part2/Glasswood-Cabin-2-Lantai-Wall-Panel.png";
+import polux_cube_iqloo_acp from "../assets/products-part2/Polux-Cube-Iqloo-ACP.png";
+import polux_cube_wood_acp from "../assets/products-part2/Polux-Cube-Wood-ACP.png";
+import polux_dome_iqloo_membran from "../assets/products-part2/Polux-Dome-Iqloo-Membran.png";
 import moluxCurve from "../assets/products/MoluxCurve.png";
 import moxar_box from "../assets/products/Moxar-Box.png";
 import moxar_container from "../assets/products/Moxar-Container.png";
@@ -72,7 +76,7 @@ export const products: Product[] = [
       "Modern cubic design with optimal space efficiency. Features contemporary aesthetics and functional layout.",
     price: 210000000,
     image: premium_private_cube_cabine,
-    category: "cube",
+    category: "polux",
     dimensions: "4 x 4.2 meters",
     features: [
       "1 Bedroom",
@@ -89,7 +93,7 @@ export const products: Product[] = [
       "Compact version of the popular Cube series. Ideal for urban settings and smaller lots.",
     price: 185000000,
     image: polux_cubebin_large,
-    category: "cube",
+    category: "polux",
     dimensions: "4 x 2.4 meters",
     features: [
       "1 Bedroom",
@@ -106,7 +110,7 @@ export const products: Product[] = [
       "Unique dome-shaped cabin offering 360-degree views and exceptional structural integrity.",
     price: 329000000,
     image: polux_dome,
-    category: "cube",
+    category: "polux",
     dimensions: "3.5 x 5.5 meters",
     features: [
       "1 Bedroom",
@@ -123,7 +127,7 @@ export const products: Product[] = [
       "Industrial-inspired container cabin with modern amenities. Perfect for contemporary living.",
     price: 350000000,
     image: moxar_container,
-    category: "cube",
+    category: "moxar",
     dimensions: "2.5 x 4.5 meters",
     features: [
       "Container Design",
@@ -139,7 +143,7 @@ export const products: Product[] = [
       "Minimalist shelter design focusing on essential living needs. Ideal for remote locations.",
     price: 195000000,
     image: premium_private_cube_cabine,
-    category: "cube",
+    category: "moxar",
     dimensions: "4 x 4 meters",
     features: [
       "Minimalist Design",
@@ -155,7 +159,7 @@ export const products: Product[] = [
       "Large format box design providing ample living space with flexible interior configurations.",
     price: 480000000,
     image: moxar_box,
-    category: "cube",
+    category: "moxar",
     dimensions: "5 x 6 meters",
     features: [
       "Large Format",
@@ -173,7 +177,7 @@ export const products: Product[] = [
       "Custom-sized Moxar cabin designed to fit specific site requirements and client preferences.",
     price: undefined,
     image: moxar,
-    category: "medium",
+    category: "moxar",
     dimensions: "4 x 3 meters (Custom)",
     features: [
       "Custom Size",
@@ -189,7 +193,7 @@ export const products: Product[] = [
       "Large shelter configuration with enhanced space for extended living or commercial use.",
     price: undefined,
     image: moxar_box,
-    category: "medium",
+    category: "moxar",
     dimensions: "5 x 6 meters (Custom)",
     features: [
       "Large Shelter",
@@ -221,7 +225,7 @@ export const products: Product[] = [
       "Flagship Molux cabin with premium materials and bespoke design options.",
     price: undefined,
     image: moluxCurve,
-    category: "medium",
+    category: "molux",
     dimensions: "Custom Size",
     features: [
       "Premium Materials",
@@ -239,7 +243,7 @@ export const products: Product[] = [
       "Innovative rotating cabin design that follows the sun for optimal natural lighting throughout the day.",
     price: undefined,
     image: polux_rotate,
-    category: "concept",
+    category: "polux",
     dimensions: "2.5 x 4.5 meters",
     features: [
       "1 Bedroom",
@@ -256,7 +260,7 @@ export const products: Product[] = [
       "Large format Cubebin with spacious interiors and modern cubic aesthetics.",
     price: undefined,
     image: polux_cubebin_large,
-    category: "concept",
+    category: "polux",
     dimensions: "4 x 4.2 meters",
     features: [
       "1 Bedroom",
@@ -273,7 +277,7 @@ export const products: Product[] = [
       "Compact Cubebin variant optimized for smaller spaces without compromising functionality.",
     price: undefined,
     image: polux_cubebin_compact,
-    category: "concept",
+    category: "polux",
     dimensions: "4 x 2.4 meters",
     features: [
       "1 Bedroom",
@@ -290,7 +294,7 @@ export const products: Product[] = [
       "Multi-purpose garage cabin that can serve as a mini store, coffee shop, or workspace.",
     price: undefined,
     image: polux_medium,
-    category: "concept",
+    category: "polux",
     dimensions: "Variable",
     features: [
       "Multi-purpose",
@@ -307,7 +311,7 @@ export const products: Product[] = [
       "Large family cabin with natural wood aesthetics and complete living amenities.",
     price: undefined,
     image: polux_woodbin,
-    category: "concept",
+    category: "polux",
     dimensions: "3 x 9.5 meters",
     features: [
       "2 Bedrooms",
@@ -324,7 +328,7 @@ export const products: Product[] = [
       "Elegant curved design cabin offering unique aesthetics and enhanced structural integrity.",
     price: undefined,
     image: moluxCurve,
-    category: "concept",
+    category: "molux",
     dimensions: "3 x 5 meters",
     features: [
       "1 Bedroom",
@@ -341,7 +345,7 @@ export const products: Product[] = [
       "Ultra-compact Moxar design perfect for minimal living or emergency accommodation.",
     price: undefined,
     image: moxar,
-    category: "concept",
+    category: "moxar",
     dimensions: "2.4 x 3.6 meters",
     features: [
       "Ultra-compact",
@@ -357,7 +361,7 @@ export const products: Product[] = [
       "Beach-optimized version of Polux 3 with weather-resistant materials and coastal design elements.",
     price: undefined,
     image: polux3_beach_concept,
-    category: "concept",
+    category: "polux",
     dimensions: "2.5 x 4.5 meters",
     features: [
       "Beach Optimized",
@@ -374,7 +378,7 @@ export const products: Product[] = [
       "Exclusive private cube cabin with luxury amenities and enhanced privacy features.",
     price: undefined,
     image: premium_private_cube_cabine,
-    category: "concept",
+    category: "premium",
     dimensions: "Custom",
     features: [
       "Privacy Enhanced",
@@ -383,5 +387,66 @@ export const products: Product[] = [
       "Premium Materials",
       "Custom Features",
     ],
+  },
+  // {
+  //   id: "polux-iqloo-artic-series",
+  //   name: "Polux Iqloo Artic series",
+  //   description:
+  //     "Exclusive private cube cabin with luxury amenities and enhanced privacy features.",
+  //   price: undefined,
+  //   image: polux_iqloo_artic_series,
+  //   category: "concept",
+  //   dimensions: "Custom",
+  //   features: [
+  //     "Privacy Enhanced",
+  //     "Luxury Amenities",
+  //     "Exclusive Design",
+  //     "Premium Materials",
+  //     "Custom Features",
+  //   ],
+  // },
+  {
+    id: "polux-cube-iqloo-acp",
+    name: "Polux Cube Iqloo (ACP)`",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 198000000,
+    image: polux_cube_iqloo_acp,
+    category: "polux",
+    dimensions: "4 x 4.2 meters",
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+  },
+  {
+    id: "polux-cube-wood-acp",
+    name: "Polux Cube Wood (ACP)",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 198000000,
+    image: polux_cube_wood_acp,
+    category: "polux",
+    dimensions: "4 x 4.2 meters",
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+  },
+  {
+    id: "polux-dome-iqloo-membran",
+    name: "Polux Dome Iqloo (Membran)",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 195000000,
+    image: polux_dome_iqloo_membran,
+    category: "polux",
+    dimensions: "5 x 6 meters",
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+  },
+  {
+    id: "glasswood-cabin-2-lantai-wall-panel",
+    name: "Glasswood Cabin 2 Lantai (Wall Panel)",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 189000000,
+    image: glasswood_cabin_2_lantai_wall_panel,
+    category: "concept",
+    dimensions: "4 x 4 meters",
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
   },
 ];

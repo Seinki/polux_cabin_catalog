@@ -1,4 +1,12 @@
-import { ArrowLeft, Minus, Plus, ShoppingCart, Trash2 } from "lucide-react";
+import {
+  ArrowLeft,
+  Info,
+  Minus,
+  Plus,
+  ShoppingCart,
+  Trash2,
+  Workflow,
+} from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import CheckoutModal, { buildOrderMessage } from "../components/CheckoutModal";
@@ -238,15 +246,31 @@ const Cart = () => {
                 </button>
               </div>
 
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">
+              {/* Box 1 */}
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg grid grid-cols-[24px_1fr] gap-3">
+                <Workflow className="w-6 h-6 text-blue-600 mt-1" />
+                <h3 className="font-semibold text-gray-900 mb-0 pt-1">
                   What happens next?
                 </h3>
-                <ul className="text-sm text-gray-800 space-y-1">
-                  <li>• Our team will contact you via WhatsApp</li>
-                  <li>• We'll discuss customizations and details</li>
-                  <li>• Receive delivery and installation quotes</li>
-                  <li>• Confirm your order and payment</li>
+                <ul className="text-sm text-gray-800 space-y-1 list-disc col-span-2 pl-5">
+                  <li>Our team will contact you via WhatsApp</li>
+                  <li>We'll discuss customizations and details</li>
+                  <li>Receive delivery and installation quotes</li>
+                  <li>Confirm your order and payment</li>
+                </ul>
+              </div>
+
+              {/* Box 2 */}
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg grid grid-cols-[24px_1fr] gap-3">
+                <Info className="w-6 h-6 text-red-600 mt-1" />
+                <h3 className="font-semibold text-gray-900 mb-0 pt-1">
+                  Additional Information
+                </h3>
+                <ul className="text-sm text-gray-800 space-y-1 list-disc col-span-2 pl-5">
+                  <li>Price does not include landscaping costs</li>
+                  <li>Prices do not include MOB fees</li>
+                  <li>Prices do not include tax</li>
+                  <li>Price does not include Smartglass, TV & Curtain</li>
                 </ul>
               </div>
             </div>

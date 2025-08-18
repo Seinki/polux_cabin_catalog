@@ -14,21 +14,22 @@ import polux1 from "../assets/products/polux1.png";
 const Home = () => {
   const features = [
     {
-      icon: Wrench,
-      title: "CUSTOMABLE",
-      description:
-        "Size, design, colour, specification, modular partition, and many more as customers need with various function Easy to Movable to changing place and any land contour, to minimalized cut and field budget for land civil works",
-    },
-    {
       icon: HomeIcon,
       title: "Premium Quality",
       description:
         "Built with the finest material, Aluminium Composite Panel body cover, Galvanized Steel frame structure, and customable interior material",
     },
     {
+      icon: Wrench,
+      title: "CUSTOMABLE",
+      description:
+        "Size, design, colour, specification, modular partition, and many more as customers need with various function Easy to Movable to changing place and any land contour, to minimalized cut and field budget for land civil works",
+    },
+    {
       icon: Package,
       title: "Easy Installation",
-      description: "Pre-fabricated modules for quick and efficient assembly",
+      description:
+        "Pre-fabricated modules for quick and efficient assembly, allowing you to move in and start using your cabin sooner",
     },
   ];
 
@@ -61,13 +62,17 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-2xl lg:text-6xl font-bold mb-6 ">
-                <span className="">Indonesia’s First </span>
-                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6 ">
+                <span className="">
+                  Indonesia’s First
+                  <br />
+                </span>
+                <span className="text-2xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
                   Futuristic{" "}
                 </span>
-                <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-green to-polux-white">
-                  ECO-Friendly{" "}
+                <span className="text-2xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-polux-green to-polux-white">
+                  ECO-Friendly
+                  <br />
                 </span>
                 <span className=" text-transparent bg-clip-text bg-gradient-to-br from-polux-yellow to-polux-white">
                   Portable Cabins
@@ -128,9 +133,9 @@ const Home = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+                  className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group flex flex-col items-center text-center"
                 >
-                  <div className="bg-gradient-to-br from-gray-500 to-gray-800 w-16 h-16 rounded-lg flex items-center justify-center mb-6 ">
+                  <div className="bg-gradient-to-br from-gray-500 to-gray-800 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                     <Icon className="text-white" size={24} />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -150,7 +155,7 @@ const Home = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Explore Our Collections
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">

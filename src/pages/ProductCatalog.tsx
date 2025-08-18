@@ -23,14 +23,19 @@ const ProductCatalog = () => {
       count: products.filter((p) => p.category === "premium").length,
     },
     {
-      id: "cube",
-      name: "Cube/Dome/Moxar",
-      count: products.filter((p) => p.category === "cube").length,
+      id: "polux",
+      name: "Polux Series",
+      count: products.filter((p) => p.category === "polux").length,
     },
     {
-      id: "medium",
-      name: "Medium Series",
-      count: products.filter((p) => p.category === "medium").length,
+      id: "moxar",
+      name: "Moxar Series",
+      count: products.filter((p) => p.category === "moxar").length,
+    },
+    {
+      id: "molux",
+      name: "Molux Series",
+      count: products.filter((p) => p.category === "molux").length,
     },
     {
       id: "concept",

@@ -31,8 +31,12 @@ const Header = () => {
               />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-white">Polux Cabin</h1>
-              <p className="text-xs text-white">Premium Portable Cabins</p>
+              <h1 className="text-2xl font-bold text-white font-light">
+                Polux <span className="font-semibold">Cabin</span>
+              </h1>
+              <p className="text-xs text-white font-light">
+                Premium Portable Cabins
+              </p>
             </div>
           </Link>
 
