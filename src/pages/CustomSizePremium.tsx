@@ -85,6 +85,7 @@ const CustomSizePremium = () => {
 
             // Extra features (sesuai fitur yang ada di UI)
             const extraFeaturePrices: Record<string, number> = {
+                bedSet: 4500000,
                 largeSofa: 2800000,
                 smallSofa: 1600000,
                 cabinets: 1000000,
@@ -547,6 +548,7 @@ const CustomSizePremium = () => {
                                             };
                                             subtotal *= materialMultipliers[specs.materials];
                                             const extraFeaturePrices: Record<string, number> = {
+                                                bedSet: 4500000,
                                                 largeSofa: 2800000,
                                                 smallSofa: 1600000,
                                                 cabinets: 1000000,
