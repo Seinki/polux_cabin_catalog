@@ -26,6 +26,7 @@ export const products: Product[] = [
     name: "Polux 1",
     description:
       "Premium compact cabin perfect for couples or small families. Features modern amenities and efficient space utilization.",
+<<<<<<< HEAD
     price: 349000000,
     image: polux1,
     category: "premium",
@@ -39,12 +40,25 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"
+=======
+    price: 480000000,
+    image: polux1,
+    category: "premium",
+    dimensions: "3 x 7 meters",
+    features: [
+      "1 Bedroom",
+      "Bed 160x200cm",
+      "Kitchen",
+      "Toilet",
+      "Premium Materials",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
     id: "polux-2",
     name: "Polux 2",
     description:
+<<<<<<< HEAD
       "Spacious two-bedroom cabin ideal for families. Complete with full AC and modern bathroom facilities.",
     price: 489000000,
     image: polux2,
@@ -59,6 +73,20 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"
+=======
+      "Spacious two-bedroom cabin ideal for families. Complete with full kitchen and modern bathroom facilities.",
+    price: 655000000,
+    image: polux2,
+    category: "premium",
+    dimensions: "4 x 10 meters",
+    features: [
+      "2 Bedrooms",
+      "Bed 160x200cm",
+      "Kitchen",
+      "Toilet",
+      "Premium Materials",
+      "Extra Storage",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
@@ -66,6 +94,7 @@ export const products: Product[] = [
     name: "Polux 3",
     description:
       "Cozy single bedroom cabin with essential amenities. Perfect for weekend getaways or temporary accommodation.",
+<<<<<<< HEAD
     price: 239000000,
     image: polux3,
     category: "premium",
@@ -79,6 +108,13 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"],
+=======
+    price: 350000000,
+    image: polux3,
+    category: "premium",
+    dimensions: "2.5 x 4.5 meters",
+    features: ["1 Bedroom", "Bed 160x200cm", "Toilet", "Compact Design"],
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
   },
 
   // Cube/Dome/Moxar Series
@@ -87,12 +123,17 @@ export const products: Product[] = [
     name: "Polux Cube",
     description:
       "Modern cubic design with optimal space efficiency. Features contemporary aesthetics and functional layout.",
+<<<<<<< HEAD
     price: 169000000,
+=======
+    price: 210000000,
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     image: premium_private_cube_cabine,
     category: "polux",
     dimensions: "4 x 4.2 meters",
     features: [
       "1 Bedroom",
+<<<<<<< HEAD
       "Non Furnished",
       "AC",
       "Toiletries",
@@ -100,6 +141,12 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"
+=======
+      "Bed 160x200cm",
+      "Toilet",
+      "Modern Design",
+      "Energy Efficient",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
@@ -107,12 +154,17 @@ export const products: Product[] = [
     name: "Polux Cube In",
     description:
       "Compact version of the popular Cube series. Ideal for urban settings and smaller lots.",
+<<<<<<< HEAD
     price: 144000000,
+=======
+    price: 185000000,
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     image: polux_cubebin_large,
     category: "polux",
     dimensions: "4 x 2.4 meters",
     features: [
       "1 Bedroom",
+<<<<<<< HEAD
       "Non Furnished",
       "AC",
       "Toiletries",
@@ -120,6 +172,12 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"
+=======
+      "Bed 160x200cm",
+      "Toilet",
+      "Compact Layout",
+      "Urban Design",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
@@ -127,12 +185,17 @@ export const products: Product[] = [
     name: "Polux Dome",
     description:
       "Unique dome-shaped cabin offering 360-degree views and exceptional structural integrity.",
+<<<<<<< HEAD
     price: 239000000,
+=======
+    price: 329000000,
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     image: polux_dome,
     category: "polux",
     dimensions: "3.5 x 5.5 meters",
     features: [
       "1 Bedroom",
+<<<<<<< HEAD
       "Non Furnished",
       "AC",
       "Toiletries",
@@ -140,6 +203,12 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"
+=======
+      "Bed 160x200cm",
+      "Toilet",
+      "Dome Structure",
+      "Panoramic Views",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
@@ -147,7 +216,11 @@ export const products: Product[] = [
     name: "Moxar Container",
     description:
       "Industrial-inspired container cabin with modern amenities. Perfect for contemporary living.",
+<<<<<<< HEAD
     price: 256000000,
+=======
+    price: 350000000,
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     image: moxar_container,
     category: "moxar",
     dimensions: "2.5 x 4.5 meters",
@@ -163,7 +236,11 @@ export const products: Product[] = [
     name: "Moxar Shelter",
     description:
       "Minimalist shelter design focusing on essential living needs. Ideal for remote locations.",
+<<<<<<< HEAD
     price: 124000000,
+=======
+    price: 195000000,
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     image: premium_private_cube_cabine,
     category: "moxar",
     dimensions: "4 x 4 meters",
@@ -179,7 +256,11 @@ export const products: Product[] = [
     name: "Moxar Box",
     description:
       "Large format box design providing ample living space with flexible interior configurations.",
+<<<<<<< HEAD
     price: 349000000,
+=======
+    price: 480000000,
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     image: moxar_box,
     category: "moxar",
     dimensions: "5 x 6 meters",
@@ -194,7 +275,11 @@ export const products: Product[] = [
   // Medium Series (Custom sizes)
   {
     id: "moxar-4x3",
+<<<<<<< HEAD
     name: "Moxar",
+=======
+    name: "Moxar 4x3",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     description:
       "Custom-sized Moxar cabin designed to fit specific site requirements and client preferences.",
     price: undefined,
@@ -202,7 +287,14 @@ export const products: Product[] = [
     category: "moxar",
     dimensions: "4 x 3 meters (Custom)",
     features: [
+<<<<<<< HEAD
       "Custom",
+=======
+      "Custom Size",
+      "Flexible Design",
+      "Site-Specific",
+      "Request Quote",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
@@ -213,6 +305,7 @@ export const products: Product[] = [
     price: undefined,
     image: moxar_box,
     category: "moxar",
+<<<<<<< HEAD
     dimensions: "5x6 meters (Custom)",
     features: [
       "Custom",
@@ -229,6 +322,14 @@ export const products: Product[] = [
     dimensions: "Custom Size",
     features: [
       "Custom",
+=======
+    dimensions: "5 x 6 meters (Custom)",
+    features: [
+      "Large Shelter",
+      "Commercial Use",
+      "Extended Living",
+      "Request Quote",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   // {
@@ -257,7 +358,14 @@ export const products: Product[] = [
     category: "molux",
     dimensions: "Custom Size",
     features: [
+<<<<<<< HEAD
       "Custom"
+=======
+      "Premium Materials",
+      "Bespoke Design",
+      "Luxury Features",
+      "Request Quote",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
 
@@ -272,8 +380,13 @@ export const products: Product[] = [
     category: "polux",
     dimensions: "2.5 x 4.5 meters",
     features: [
+<<<<<<< HEAD
       "Non Furnished",
       "Toiletries",
+=======
+      "1 Bedroom",
+      "Toilet",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
       "Rotating Design",
       "Solar Tracking",
       "Innovative Concept",
@@ -289,8 +402,13 @@ export const products: Product[] = [
     category: "polux",
     dimensions: "4 x 4.2 meters",
     features: [
+<<<<<<< HEAD
       "Non Furnished",
       "Toiletries",
+=======
+      "1 Bedroom",
+      "Toilet",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
       "Bed 160x200cm",
       "Cubic Design",
       "Spacious Layout",
@@ -306,8 +424,13 @@ export const products: Product[] = [
     category: "polux",
     dimensions: "4 x 2.4 meters",
     features: [
+<<<<<<< HEAD
       "Non Furnished",
       "Toiletries",
+=======
+      "1 Bedroom",
+      "Toilet",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
       "Bed 130x200cm",
       "Compact Design",
       "Space Optimized",
@@ -334,12 +457,17 @@ export const products: Product[] = [
     id: "polux-woodbin",
     name: "Polux Woodbin",
     description:
+<<<<<<< HEAD
       "Large family cabin with Waterheater Installed aesthetics and complete living amenities.",
+=======
+      "Large family cabin with natural wood aesthetics and complete living amenities.",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     price: undefined,
     image: polux_woodbin,
     category: "polux",
     dimensions: "3 x 9.5 meters",
     features: [
+<<<<<<< HEAD
       "Non Furnished",
       "AC",
       "Toiletries",
@@ -347,6 +475,13 @@ export const products: Product[] = [
       "Smartdoor Lock",
       "Downlight",
       "LED Non Smart"
+=======
+      "2 Bedrooms",
+      "Kitchen",
+      "Toilet",
+      "Natural Wood",
+      "Family Living",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     ],
   },
   {
@@ -359,8 +494,13 @@ export const products: Product[] = [
     category: "molux",
     dimensions: "3 x 5 meters",
     features: [
+<<<<<<< HEAD
       "Non Furnished",
       "Toiletries",
+=======
+      "1 Bedroom",
+      "Toilet",
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
       "Curved Design",
       "Unique Aesthetics",
       "Premium Concept",
@@ -442,7 +582,11 @@ export const products: Product[] = [
     image: polux_cube_iqloo_acp,
     category: "polux",
     dimensions: "4 x 4.2 meters",
+<<<<<<< HEAD
     features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+=======
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
   },
   {
     id: "polux-cube-wood-acp",
@@ -453,7 +597,11 @@ export const products: Product[] = [
     image: polux_cube_wood_acp,
     category: "polux",
     dimensions: "4 x 4.2 meters",
+<<<<<<< HEAD
     features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+=======
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
   },
   {
     id: "polux-dome-iqloo-membran",
@@ -464,7 +612,11 @@ export const products: Product[] = [
     image: polux_dome_iqloo_membran,
     category: "polux",
     dimensions: "5 x 6 meters",
+<<<<<<< HEAD
     features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+=======
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
   },
   {
     id: "glasswood-cabin-2-lantai-wall-panel",
@@ -475,6 +627,10 @@ export const products: Product[] = [
     image: glasswood_cabin_2_lantai_wall_panel,
     category: "concept",
     dimensions: "4 x 4 meters",
+<<<<<<< HEAD
     features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+=======
+    features: ["1 Bedroom", "Toilet", "AC", "Waterheater"],
+>>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
   },
 ];
