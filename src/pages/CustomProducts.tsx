@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import poluxCustom from "../assets/products/POLUX-Custom.png";
 
 export default function CustomProducts() {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function CustomProducts() {
                         onClick={() => navigate("/custom-size-premium")}
                     >
                         <img
-                            src="/src/assets/products/Premium-Private-Cube-Cabin.png"
+                            src={poluxCustom}
                             alt="Premium Custom Size"
                             className="w-full h-64 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out group-hover:scale-105"
                         />
@@ -35,7 +36,7 @@ export default function CustomProducts() {
                         onClick={() => navigate("/custom-size-lowcost")}
                     >
                         <img
-                            src="/src/assets/products/Polux-Cubebin-compact.png"
+                            src={poluxCustom}
                             alt="Low Cost Custom Size"
                             className="w-full h-64 object-cover rounded-md mb-4 transition-transform duration-300 ease-in-out group-hover:scale-105"
                         />
