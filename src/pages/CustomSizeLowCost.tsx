@@ -192,7 +192,7 @@ const CustomSizePremium = () => {
                                         Length: {specs.length}m
                                     </label>
                                     <Slider
-                                        min={0}
+                                        min={2}
                                         max={10}
                                         step={1}
                                         value={specs.length}
@@ -205,7 +205,7 @@ const CustomSizePremium = () => {
                                         Width: {specs.width}m
                                     </label>
                                     <Slider
-                                        min={0}
+                                        min={2}
                                         max={10}
                                         step={1}
                                         value={specs.width}
@@ -218,7 +218,7 @@ const CustomSizePremium = () => {
                                         Height: {specs.height}m
                                     </label>
                                     <Slider
-                                        min={0}
+                                        min={2}
                                         max={10}
                                         value={specs.height}
                                         step={1}
@@ -391,7 +391,7 @@ const CustomSizePremium = () => {
                                             MOB Price
                                         </label>
                                         <Slider
-                                            min={0}
+                                            min={2}
                                             max={20}
                                             value={specs.mobLength}
                                             onChange={(value) => handleSliderChange("mobLength", value)}
