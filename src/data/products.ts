@@ -1,0 +1,480 @@
+import glasswood_cabin_2_lantai_wall_panel from "../assets/products-part2/Glasswood-Cabin-2-Lantai-Wall-Panel.png";
+import polux_cube_iqloo_acp from "../assets/products-part2/Polux-Cube-Iqloo-ACP.png";
+import polux_cube_wood_acp from "../assets/products-part2/Polux-Cube-Wood-ACP.png";
+import polux_dome_iqloo_membran from "../assets/products-part2/Polux-Dome-Iqloo-Membran.png";
+import moluxCurve from "../assets/products/MoluxCurve.png";
+import moxar_box from "../assets/products/Moxar-Box.png";
+import moxar_container from "../assets/products/Moxar-Container.png";
+import moxar from "../assets/products/Moxar.png";
+import polux_cubebin_compact from "../assets/products/Polux-Cubebin-compact.png";
+import polux_cubebin_large from "../assets/products/Polux-Cubebin-large.png";
+import polux_dome from "../assets/products/POLUX-Dome.png";
+import polux_medium from "../assets/products/POLUX-Medium.png";
+import polux_rotate from "../assets/products/POLUX-Rotate.png";
+import polux_woodbin from "../assets/products/POLUX-Woodbin.png";
+import polux1 from "../assets/products/polux1.png";
+import polux2 from "../assets/products/polux2.png";
+import polux3_beach_concept from "../assets/products/Polux3-Beach-Concept.png";
+import polux3 from "../assets/products/polux3.png";
+import premium_private_cube_cabine from "../assets/products/Premium-Private-Cube-Cabin.png";
+import { Product } from "../types";
+
+export const products: Product[] = [
+  // Premium Series
+  {
+    id: "polux-1",
+    name: "Polux 1",
+    description:
+      "Premium compact cabin perfect for couples or small families. Features modern amenities and efficient space utilization.",
+    price: 349000000,
+    image: polux1,
+    category: "premium",
+    dimensions: "3x7 meters",
+    features: [
+      "1 Bedroom",
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"
+    ],
+  },
+  {
+    id: "polux-2",
+    name: "Polux 2",
+    description:
+      "Spacious two-bedroom cabin ideal for families. Complete with full AC and modern bathroom facilities.",
+    price: 489000000,
+    image: polux2,
+    category: "premium",
+    dimensions: "3.7x10 meters",
+    features: [
+      "2 Bedroom",
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"
+    ],
+  },
+  {
+    id: "polux-3",
+    name: "Polux 3",
+    description:
+      "Cozy single bedroom cabin with essential amenities. Perfect for weekend getaways or temporary accommodation.",
+    price: 239000000,
+    image: polux3,
+    category: "premium",
+    dimensions: "2.5x4.5 meters",
+    features: [
+      "1 Bedroom",
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"],
+  },
+
+  // Cube/Dome/Moxar Series
+  {
+    id: "polux-cube",
+    name: "Polux Cube",
+    description:
+      "Modern cubic design with optimal space efficiency. Features contemporary aesthetics and functional layout.",
+    price: 169000000,
+    image: premium_private_cube_cabine,
+    category: "polux",
+    dimensions: "4 x 4.2 meters",
+    features: [
+      "1 Bedroom",
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"
+    ],
+  },
+  {
+    id: "polux-cube-in",
+    name: "Polux Cube In",
+    description:
+      "Compact version of the popular Cube series. Ideal for urban settings and smaller lots.",
+    price: 144000000,
+    image: polux_cubebin_large,
+    category: "polux",
+    dimensions: "4 x 2.4 meters",
+    features: [
+      "1 Bedroom",
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"
+    ],
+  },
+  {
+    id: "polux-dome",
+    name: "Polux Dome",
+    description:
+      "Unique dome-shaped cabin offering 360-degree views and exceptional structural integrity.",
+    price: 239000000,
+    image: polux_dome,
+    category: "polux",
+    dimensions: "3.5 x 5.5 meters",
+    features: [
+      "1 Bedroom",
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"
+    ],
+  },
+  {
+    id: "moxar-container",
+    name: "Moxar Container",
+    description:
+      "Industrial-inspired container cabin with modern amenities. Perfect for contemporary living.",
+    price: 256000000,
+    image: moxar_container,
+    category: "moxar",
+    dimensions: "2.5 x 4.5 meters",
+    features: [
+      "Container Design",
+      "Modern Amenities",
+      "Industrial Style",
+      "Durable Construction",
+    ],
+  },
+  {
+    id: "moxar-shelter",
+    name: "Moxar Shelter",
+    description:
+      "Minimalist shelter design focusing on essential living needs. Ideal for remote locations.",
+    price: 124000000,
+    image: premium_private_cube_cabine,
+    category: "moxar",
+    dimensions: "4 x 4 meters",
+    features: [
+      "Minimalist Design",
+      "Essential Amenities",
+      "Remote Living",
+      "Weather Resistant",
+    ],
+  },
+  {
+    id: "moxar-box",
+    name: "Moxar Box",
+    description:
+      "Large format box design providing ample living space with flexible interior configurations.",
+    price: 349000000,
+    image: moxar_box,
+    category: "moxar",
+    dimensions: "5 x 6 meters",
+    features: [
+      "Large Format",
+      "Flexible Layout",
+      "Spacious Interior",
+      "Multi-purpose Design",
+    ],
+  },
+
+  // Medium Series (Custom sizes)
+  {
+    id: "moxar-4x3",
+    name: "Moxar",
+    description:
+      "Custom-sized Moxar cabin designed to fit specific site requirements and client preferences.",
+    price: undefined,
+    image: moxar,
+    category: "moxar",
+    dimensions: "4 x 3 meters (Custom)",
+    features: [
+      "Custom",
+    ],
+  },
+  {
+    id: "moxar-shelter-5x6",
+    name: "Moxar Shelter 5x6",
+    description:
+      "Large shelter configuration with enhanced space for extended living or commercial use.",
+    price: undefined,
+    image: moxar_box,
+    category: "moxar",
+    dimensions: "5x6 meters (Custom)",
+    features: [
+      "Custom",
+    ],
+  },
+  {
+    id: "moxar-cube",
+    name: "Molux Cube",
+    description:
+      "Premium Molux series with cubic design and luxury finishing materials.",
+    price: undefined,
+    image: moluxCurve,
+    category: "medium",
+    dimensions: "Custom Size",
+    features: [
+      "Custom",
+    ],
+  },
+  // {
+  //   id: "molux-cube",
+  //   name: "Molux Cube",
+  //   description:
+  //     "Premium Molux series with cubic design and luxury finishing materials.",
+  //   price: undefined,
+  //   image: moluxCurve,
+  //   category: "medium",
+  //   dimensions: "Custom Size",
+  //   features: [
+  //     "Premium Molux Series",
+  //     "Luxury Finishes",
+  //     "Custom Configuration",
+  //     "Request Quote",
+  //   ],
+  // },
+  {
+    id: "molux",
+    name: "Molux",
+    description:
+      "Flagship Molux cabin with premium materials and bespoke design options.",
+    price: undefined,
+    image: moluxCurve,
+    category: "molux",
+    dimensions: "Custom Size",
+    features: [
+      "Custom"
+    ],
+  },
+
+  // Concept Models
+  {
+    id: "polux-rotate",
+    name: "Polux Rotate",
+    description:
+      "Innovative rotating cabin design that follows the sun for optimal natural lighting throughout the day.",
+    price: undefined,
+    image: polux_rotate,
+    category: "polux",
+    dimensions: "2.5 x 4.5 meters",
+    features: [
+      "Non Furnished",
+      "Toiletries",
+      "Rotating Design",
+      "Solar Tracking",
+      "Innovative Concept",
+    ],
+  },
+  {
+    id: "polux-cubebin-large",
+    name: "Polux Cubebin Large",
+    description:
+      "Large format Cubebin with spacious interiors and modern cubic aesthetics.",
+    price: undefined,
+    image: polux_cubebin_large,
+    category: "polux",
+    dimensions: "4 x 4.2 meters",
+    features: [
+      "Non Furnished",
+      "Toiletries",
+      "Bed 160x200cm",
+      "Cubic Design",
+      "Spacious Layout",
+    ],
+  },
+  {
+    id: "polux-cubebin-compact",
+    name: "Polux Cubebin Compact",
+    description:
+      "Compact Cubebin variant optimized for smaller spaces without compromising functionality.",
+    price: undefined,
+    image: polux_cubebin_compact,
+    category: "polux",
+    dimensions: "4 x 2.4 meters",
+    features: [
+      "Non Furnished",
+      "Toiletries",
+      "Bed 130x200cm",
+      "Compact Design",
+      "Space Optimized",
+    ],
+  },
+  {
+    id: "polux-garage",
+    name: "Polux Garage",
+    description:
+      "Multi-purpose garage cabin that can serve as a mini store, coffee shop, or workspace.",
+    price: undefined,
+    image: polux_medium,
+    category: "polux",
+    dimensions: "Variable",
+    features: [
+      "Multi-purpose",
+      "Commercial Use",
+      "Flexible Interior",
+      "Business Ready",
+      "Custom Layout",
+    ],
+  },
+  {
+    id: "polux-woodbin",
+    name: "Polux Woodbin",
+    description:
+      "Large family cabin with Waterheater Installed aesthetics and complete living amenities.",
+    price: undefined,
+    image: polux_woodbin,
+    category: "polux",
+    dimensions: "3 x 9.5 meters",
+    features: [
+      "Non Furnished",
+      "AC",
+      "Toiletries",
+      "Waterheater Installed",
+      "Smartdoor Lock",
+      "Downlight",
+      "LED Non Smart"
+    ],
+  },
+  {
+    id: "molux-curve",
+    name: "Molux Curve",
+    description:
+      "Elegant curved design cabin offering unique aesthetics and enhanced structural integrity.",
+    price: undefined,
+    image: moluxCurve,
+    category: "molux",
+    dimensions: "3 x 5 meters",
+    features: [
+      "Non Furnished",
+      "Toiletries",
+      "Curved Design",
+      "Unique Aesthetics",
+      "Premium Concept",
+    ],
+  },
+  {
+    id: "moxar-compact",
+    name: "Moxar Compact",
+    description:
+      "Ultra-compact Moxar design perfect for minimal living or emergency accommodation.",
+    price: undefined,
+    image: moxar,
+    category: "moxar",
+    dimensions: "2.4 x 3.6 meters",
+    features: [
+      "Ultra-compact",
+      "Minimal Living",
+      "Emergency Housing",
+      "Essential Amenities",
+    ],
+  },
+  {
+    id: "polux-3-beach",
+    name: "Polux 3 Beach Concept",
+    description:
+      "Beach-optimized version of Polux 3 with weather-resistant materials and coastal design elements.",
+    price: undefined,
+    image: polux3_beach_concept,
+    category: "polux",
+    dimensions: "2.5 x 4.5 meters",
+    features: [
+      "Beach Optimized",
+      "Weather Resistant",
+      "Coastal Design",
+      "Ocean Views",
+      "Salt Air Protection",
+    ],
+  },
+  {
+    id: "premium-private-cube",
+    name: "Premium Private Cube",
+    description:
+      "Exclusive private cube cabin with luxury amenities and enhanced privacy features.",
+    price: undefined,
+    image: premium_private_cube_cabine,
+    category: "premium",
+    dimensions: "Custom",
+    features: [
+      "Privacy Enhanced",
+      "Luxury Amenities",
+      "Exclusive Design",
+      "Premium Materials",
+      "Custom Features",
+    ],
+  },
+  // {
+  //   id: "polux-iqloo-artic-series",
+  //   name: "Polux Iqloo Artic series",
+  //   description:
+  //     "Exclusive private cube cabin with luxury amenities and enhanced privacy features.",
+  //   price: undefined,
+  //   image: polux_iqloo_artic_series,
+  //   category: "concept",
+  //   dimensions: "Custom",
+  //   features: [
+  //     "Privacy Enhanced",
+  //     "Luxury Amenities",
+  //     "Exclusive Design",
+  //     "Premium Materials",
+  //     "Custom Features",
+  //   ],
+  // },
+  {
+    id: "polux-cube-iqloo-acp",
+    name: "Polux Cube Iqloo (ACP)`",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 198000000,
+    image: polux_cube_iqloo_acp,
+    category: "polux",
+    dimensions: "4 x 4.2 meters",
+    features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+  },
+  {
+    id: "polux-cube-wood-acp",
+    name: "Polux Cube Wood (ACP)",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 198000000,
+    image: polux_cube_wood_acp,
+    category: "polux",
+    dimensions: "4 x 4.2 meters",
+    features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+  },
+  {
+    id: "polux-dome-iqloo-membran",
+    name: "Polux Dome Iqloo (Membran)",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 195000000,
+    image: polux_dome_iqloo_membran,
+    category: "polux",
+    dimensions: "5 x 6 meters",
+    features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+  },
+  {
+    id: "glasswood-cabin-2-lantai-wall-panel",
+    name: "Glasswood Cabin 2 Lantai (Wall Panel)",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+    price: 189000000,
+    image: glasswood_cabin_2_lantai_wall_panel,
+    category: "concept",
+    dimensions: "4 x 4 meters",
+    features: ["Non Furnished", "Toiletries", "AC", "Waterheater"],
+  },
+];
