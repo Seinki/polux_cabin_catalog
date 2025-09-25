@@ -6,6 +6,8 @@ const EXTRA_FEATURES = [
     { id: "chair", label: "Chair" },
     { id: "table", label: "Table" },
     { id: "mirrorCabin", label: "Mirror Cabin" },
+    { id: "luxuryInteriorSet", label: "Luxury Interior Set", price: "30%"}
+
 ];
 import { Calculator, ShoppingCart } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -27,20 +29,22 @@ interface CustomSpecs {
     bedType: string;
     materials: string;
     extras: string[];
+        mobLength: number;
 }
 
 const CustomSizePremium = () => {
     const { addToCart } = useCart();
     const [specs, setSpecs] = useState<CustomSpecs>({
-        length: 1,
-        width: 1,
-        height: 1,
+        length: 0,
+        width: 0,
+        height: 0,
         bedrooms: 0,
         bathrooms: 0,
         kitchen: false,
         bedType: "160x200",
         materials: "standard",
         extras: [],
+            mobLength: 0,
     });
 
     const [estimatedPrice, setEstimatedPrice] = useState<number | null>(null);
@@ -52,11 +56,23 @@ const CustomSizePremium = () => {
         const timer = setTimeout(() => {
             // Hitung volume (panjang x lebar x tinggi)
             const volume = specs.length * specs.width * specs.height;
-            let basePrice = volume * 5539000; // Base price per m3
+            // Jika semua dimensi 0, harga 0
+            let basePrice = 0;
+            if (specs.length === 0 && specs.width === 0 && specs.height === 0) {
+                basePrice = 0;
+            } else if (specs.length < 3 || specs.width < 3 || specs.height < 3) {
+                // Jika ada dimensi < 3, harga = (length + width + height) * 5.539.000
+                basePrice = (specs.length + specs.width + specs.height) * 5539000;
+            } else {
+                // Semua dimensi >= 3, pakai volume
+                basePrice = volume * 5539000;
+            }
 
-            // Add room costs
-            basePrice += (specs.bedrooms - 1) * 50000000;
-            basePrice += (specs.bathrooms - 1) * 30000000;
+            // Add room costs (minimum 1 bedroom & 1 bathroom for price calculation)
+            const bedrooms = Math.max(1, specs.bedrooms);
+            const bathrooms = Math.max(1, specs.bathrooms);
+            basePrice += (bedrooms - 1) * 50000000;
+            basePrice += (bathrooms - 1) * 30000000;
             if (specs.kitchen) basePrice += 40000000;
 
             // Material multiplier
@@ -66,7 +82,6 @@ const CustomSizePremium = () => {
                 luxury: 1.6,
             };
             basePrice *= materialMultipliers[specs.materials];
-
 
             // Extra features (sesuai fitur yang ada di UI)
             const extraFeaturePrices: Record<string, number> = {
@@ -81,6 +96,14 @@ const CustomSizePremium = () => {
                 if (extraFeaturePrices[extra]) basePrice += extraFeaturePrices[extra];
             });
 
+            // Tambahkan harga MOB (selalu, walau 0)
+            basePrice += specs.mobLength * 325000;
+
+            // Jika luxuryInteriorSet dicentang, naikkan 30%
+            if (specs.extras.includes("luxuryInteriorSet")) {
+                basePrice *= 1.3;
+            }
+
             setEstimatedPrice(basePrice > 0 ? basePrice : 0);
             setIsCalculating(false);
         }, 500);
@@ -92,9 +115,9 @@ const CustomSizePremium = () => {
         setSpecs((prev) => ({ ...prev, [key]: value }));
     };
 
-    const handleSelectChange = (key: keyof CustomSpecs, value: any) => {
-        setSpecs((prev) => ({ ...prev, [key]: value }));
-    };
+    // const handleSelectChange = (key: keyof CustomSpecs, value: any) => {
+    //     setSpecs((prev) => ({ ...prev, [key]: value }));
+    // };
 
     const toggleExtra = (extra: string) => {
         setSpecs((prev) => ({
@@ -169,8 +192,9 @@ const CustomSizePremium = () => {
                                         Length: {specs.length}m
                                     </label>
                                     <Slider
-                                        min={1}
+                                        min={0}
                                         max={10}
+                                        step={1}
                                         value={specs.length}
                                         onChange={(value) => handleSliderChange("length", value)}
                                     />
@@ -181,8 +205,9 @@ const CustomSizePremium = () => {
                                         Width: {specs.width}m
                                     </label>
                                     <Slider
-                                        min={1}
+                                        min={0}
                                         max={10}
+                                        step={1}
                                         value={specs.width}
                                         onChange={(value) => handleSliderChange("width", value)}
                                     />
@@ -193,10 +218,10 @@ const CustomSizePremium = () => {
                                         Height: {specs.height}m
                                     </label>
                                     <Slider
-                                        min={1}
+                                        min={0}
                                         max={10}
                                         value={specs.height}
-                                        step={0.1}
+                                        step={1}
                                         onChange={(value) => handleSliderChange("height", value)}
                                     />
                                 </div>
@@ -308,7 +333,7 @@ const CustomSizePremium = () => {
                                 Extra Features
                             </h3>
 
-                            <div className="grid sm:grid-cols-2 gap-4">
+                            {/* <div className="grid sm:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">
                                         Bed Size
@@ -327,16 +352,17 @@ const CustomSizePremium = () => {
                                         <option value="200x200">200x200</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="grid sm:grid-cols-2 gap-4">
                                 
                                 {[
-                                    { id: "largeSofa", label: "Large Sofa", price: "2800000" },
-                                    { id: "smallSofa", label: "Small Sofa", price: "1600000" },
-                                    { id: "cabinets", label: "Cabinets", price: "1000000" },
-                                    { id: "chair", label: "Chair", price: "500000" },
-                                    { id: "table", label: "Table", price: "500000" },
-                                    { id: "mirrorCabin", label: "Mirror Cabin", price: "8500000" },
+                                    { id: "bedSet", label: "Bed Set", price: "IDR4500000" },
+                                    { id: "largeSofa", label: "Large Sofa", price: "IDR2800000" },
+                                    { id: "smallSofa", label: "Small Sofa", price: "IDR1600000" },
+                                    { id: "cabinets", label: "Cabinets", price: "IDR1000000" },
+                                    { id: "chair", label: "Chair", price: "IDR500000" },
+                                    { id: "table", label: "Table", price: "IDR500000" },
+                                    { id: "mirrorCabin", label: "Mirror Cabin", price: "IDR8500000" },
                                 ].map((extra) => (
                                     <label
                                         key={extra.id}
@@ -359,7 +385,46 @@ const CustomSizePremium = () => {
                                     </label>
                                 ))}
                             </div>
+                                    {/* MOB Price */}
+                                    <div className="mt-6">
+                                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                                            MOB Price
+                                        </label>
+                                        <Slider
+                                            min={0}
+                                            max={20}
+                                            value={specs.mobLength}
+                                            onChange={(value) => handleSliderChange("mobLength", value)}
+                                        />
+                                        <div className="text-sm text-gray-500 mt-1">{specs.mobLength} meter x IDR325000 = {formatPrice(specs.mobLength * 325000)}</div>
+                                    </div>
                         </div>
+                        <div className="grid sm:grid-cols-2 gap-4">
+                                {[
+                                    { id: "luxuryInteriorSet", label: "Luxury Interior Set", price: "30%"}
+                                ].map((extra) => (
+                                    <label
+                                        key={extra.id}
+                                        className="flex items-center space-x-3 p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer"
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            checked={specs.extras.includes(extra.id)}
+                                            onChange={() => toggleExtra(extra.id)}
+                                            className="w-4 h-4 text-gray-600 border-gray-300 rounded focus:ring-gray-500"
+                                        />
+                                        <div className="flex-1">
+                                            <span className="text-sm font-medium text-gray-700">
+                                                {extra.label}
+                                            </span>
+                                            <span className="text-xs text-gray-500 block">
+                                                {extra.price}
+                                            </span>
+                                        </div>
+                                    </label>
+                                ))}
+                            </div>
+
                     </div>
 
                     {/* Preview & Pricing */}
@@ -418,10 +483,10 @@ const CustomSizePremium = () => {
                                         {specs.kitchen ? "Yes" : "No"}
                                     </span>
                                 </div> */}
-                                <div className="flex justify-between py-2 border-b border-gray-100">
+                                {/* <div className="flex justify-between py-2 border-b border-gray-100">
                                     <span className="text-gray-600">Bed Size</span>
                                     <span className="font-medium">{specs.bedType}cm</span>
-                                </div>
+                                </div> */}
                                 {/* <div className="flex justify-between py-2 border-b border-gray-100">
                                     <span className="text-gray-600">Materials</span>
                                     <span className="font-medium capitalize">
@@ -460,9 +525,27 @@ const CustomSizePremium = () => {
                                 ) : (
                                     <div className="text-4xl font-bold text-gray-600">
                                         {(() => {
-                                            // Jika volume 1 (slider default), harga awal Rp.5.539.000 + total extra features
+                                            // Gunakan logika yang sama dengan useEffect agar konsisten
                                             const volume = specs.length * specs.width * specs.height;
-                                            const baseDefault = 5539000;
+                                            let subtotal = 0;
+                                            if (specs.length === 0 && specs.width === 0 && specs.height === 0) {
+                                                subtotal = 0;
+                                            } else if (specs.length < 3 || specs.width < 3 || specs.height < 3) {
+                                                subtotal = (specs.length + specs.width + specs.height) * 5539000;
+                                            } else {
+                                                subtotal = volume * 5539000;
+                                            }
+                                            const bedrooms = Math.max(1, specs.bedrooms);
+                                            const bathrooms = Math.max(1, specs.bathrooms);
+                                            subtotal += (bedrooms - 1) * 50000000;
+                                            subtotal += (bathrooms - 1) * 30000000;
+                                            if (specs.kitchen) subtotal += 40000000;
+                                            const materialMultipliers: Record<string, number> = {
+                                                standard: 1,
+                                                premium: 1.3,
+                                                luxury: 1.6,
+                                            };
+                                            subtotal *= materialMultipliers[specs.materials];
                                             const extraFeaturePrices: Record<string, number> = {
                                                 largeSofa: 2800000,
                                                 smallSofa: 1600000,
@@ -471,13 +554,14 @@ const CustomSizePremium = () => {
                                                 table: 500000,
                                                 mirrorCabin: 8500000,
                                             };
-                                            const extraTotal = specs.extras.reduce((sum, id) => sum + (extraFeaturePrices[id] || 0), 0);
-                                            let subtotal = 0;
-                                            if (volume === 1) {
-                                                subtotal = baseDefault + extraTotal;
-                                            } else {
-                                                subtotal = estimatedPrice ? estimatedPrice : (baseDefault + extraTotal);
+                                            specs.extras.forEach((extra) => {
+                                                if (extraFeaturePrices[extra]) subtotal += extraFeaturePrices[extra];
+                                            });
+                                            subtotal += specs.mobLength * 325000;
+                                            if (specs.extras.includes("luxuryInteriorSet")) {
+                                                subtotal *= 1.3;
                                             }
+                                            if (subtotal < 0) subtotal = 0;
                                             const tax = subtotal * 0.11;
                                             const total = subtotal + tax;
                                             return (
