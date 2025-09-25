@@ -1,5 +1,4 @@
 import {
-<<<<<<< HEAD
   AirVent,
   ArrowLeft,
   Ban,
@@ -11,12 +10,6 @@ import {
   Gem,
   Lamp,
   Lightbulb,
-=======
-  ArrowLeft,
-  Bath,
-  Bed,
-  ChefHat,
->>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
   Package,
   Ruler,
   ShoppingCart,
@@ -68,7 +61,6 @@ const ProductDetail = () => {
   };
 
   const getFeatureIcon = (feature: string) => {
-<<<<<<< HEAD
     if (feature.includes("Bedroom")) return <BedDouble size={20} />;
     if (feature.includes("Non Furnished")) return <Ban size={20} />;
     if (feature.includes("AC")) return <AirVent size={20} />;
@@ -77,13 +69,6 @@ const ProductDetail = () => {
     if (feature.includes("Smartdoor")) return <DoorOpen size={20} />;
     if (feature.includes("Downlight")) return <Lamp size={20} />;
     if (feature.includes("LED")) return <Lightbulb size={20} />;
-=======
-    if (feature.includes("BR") || feature.includes("Bed"))
-      return <Bed size={20} />;
-    if (feature.includes("Toilet")) return <Bath size={20} />;
-    if (feature.includes("Kitchen")) return <ChefHat size={20} />;
-    if (feature.includes("m")) return <Ruler size={20} />;
->>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
     return <Package size={20} />;
   };
 
@@ -186,11 +171,7 @@ const ProductDetail = () => {
             {/* Price */}
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="text-3xl font-bold text-gray-600 mb-4">
-<<<<<<< HEAD
                 {product.price ? formatPrice(product.price) : "Custom"}
-=======
-                {product.price ? formatPrice(product.price) : "Request Quote"}
->>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
               </div>
               {product.price && (
                 <p className="text-sm text-gray-500">
@@ -295,11 +276,7 @@ const ProductDetail = () => {
                     <div className="text-gray-800 font-semibold">
                       {relatedProduct.price
                         ? formatPrice(relatedProduct.price)
-<<<<<<< HEAD
                         : "Custom"}
-=======
-                        : "Request Quote"}
->>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
                     </div>
                   </div>
                 </Link>

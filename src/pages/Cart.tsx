@@ -183,11 +183,7 @@ const Cart = () => {
                         <div className="text-2xl font-bold text-gray-600">
                           {item.price
                             ? formatPrice(item.price * item.quantity)
-<<<<<<< HEAD
                             : "Custom"}
-=======
-                            : "Request Quote"}
->>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
                         </div>
                         {item.price && (
                           <div className="text-sm text-gray-500">
@@ -230,11 +226,7 @@ const Cart = () => {
                 <div className="flex justify-between text-xl font-bold text-gray-900">
                   <span>Total</span>
                   <span>
-<<<<<<< HEAD
                     {totalPrice > 0 ? formatPrice(totalPrice) : "Custom"}
-=======
-                    {totalPrice > 0 ? formatPrice(totalPrice) : "Request Quote"}
->>>>>>> 127d8eaa8d54b158eab95f2762a3d4491f33296f
                   </span>
                 </div>
               </div>
